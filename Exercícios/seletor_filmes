@@ -1,0 +1,19 @@
+# Seletor de filmes para auxiliar na escolha do que assistir
+
+from random import choice
+
+lista = []
+
+print('------------------- SELETOR DE FILMES -------------------')
+
+while True:
+    n1 = input('\nDigite o nome de um filme. Digite "ok" para encerrar: ')
+    
+    if n1 == 'ok':
+        break
+    
+    lista.append(n1)
+    
+escolha = choice(lista)
+
+print('O filme selecionado é', escolha)
