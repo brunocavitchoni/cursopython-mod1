@@ -1,0 +1,43 @@
+# 17 Faça um programa que leia o comprimento do cateto oposto e 
+# do cateto adjacente de um triângulo retângulo, calcule e mostre o comprimento da hipotenusa
+
+from math import sqrt 
+
+cat1 = float(input('Digite o comprimento do primeiro cateto: '))
+cat2 = float(input('Digite o comprimento do segundo cateto: '))
+
+# h² = a²+ b²
+
+hipotenusa = sqrt((cat1 ** 2) + (cat2 ** 2))
+
+print(f'A hipotenusa entre os catetos medindo {cat1} e {cat2} é {hipotenusa}')
+
+#OUTRA FORMA
+
+from math import sqrt
+
+def hipotenusa(a,b):
+    hipotenusa = sqrt((a ** 2) + (b ** 2))
+    return hipotenusa
+    
+cat1 = float(input('Digite o comprimento do primeiro cateto: '))
+cat2 = float(input('Digite o comprimento do segundo cateto: '))
+
+hip = hipotenusa(cat1, cat2)
+
+print(f'A hipotenusa entre os catetos medindo {cat1} e {cat2} é {hip}')
+
+# OUTRA FORMA
+
+from math import hypot
+
+def hipotenusa(a,b):
+    hipotenusa = hypot(a,b)
+    return hipotenusa
+    
+cat1 = float(input('Digite o comprimento do primeiro cateto: '))
+cat2 = float(input('Digite o comprimento do segundo cateto: '))
+
+hip = round(hipotenusa(cat1, cat2),2)
+
+print(f'A hipotenusa entre os catetos medindo {cat1} e {cat2} é {hip}')
