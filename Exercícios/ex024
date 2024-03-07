@@ -1,0 +1,20 @@
+# Crie um programa que peça o nome de uma cidade e verifique se ela inicia com "Santo"
+
+cidade = str(input('Digite o nome de uma cidade: ')).strip()
+cidade = cidade[:5].upper()
+
+if cidade == 'SANTO':
+    print('A cidade inicia com "Santo"')
+else:
+    print('A cidade não inicia com "Santo"')
+    
+# OUTRA FORMA
+
+cidade = str(input('Digite o nome de uma cidade: ')).strip()
+cidade = cidade.lower()
+cidade = cidade.split()
+
+if cidade[0] == 'santo':
+    print('A cidade inicia com "Santo"')
+else:
+    print('A cidade não inicia com Santo')
