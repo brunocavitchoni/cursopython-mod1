@@ -1,0 +1,92 @@
+# 33 - Faça um programa que leia 3 números e mostre qual é o maior e qual é o menor
+
+n1 = int(input('Digite um número: '))
+n2 = int(input('Digite um número: '))
+n3 = int(input('Digite um número: '))
+
+if n1 > n2:
+    if n1 > n3:
+        print(f'Maior número: {n1}')
+
+if n2 > n1: 
+    if n2 > n3:
+        print(f'Maior número: {n2}')
+        
+if n3 > n1:
+    if n3 > n2:
+        print(f'Maior número: {n3}')
+        
+if n1 < n2:
+    if n1 < n3:
+        print(f'Menor número: {n1}')
+            
+if n2 < n1:
+    if n2 < n3:
+        print(f'Menor número: {n2}')
+            
+if n3 < n1:
+    if n3 < n2:
+        print(f'Menor número: {n3}')
+        
+# OUTRA FORMA
+
+n1 = int(input('Digite um número: '))
+n2 = int(input('Digite um número: '))
+n3 = int(input('Digite um número: '))
+
+def maior(n1,n2,n3):
+    if n1 > n2:
+        if n1 > n3:
+            print(f'Maior número: {n1}')
+
+    if n2 > n1: 
+        if n2 > n3:
+            print(f'Maior número: {n2}')
+        
+    if n3 > n1:
+        if n3 > n2:
+            print(f'Maior número: {n3}')
+        
+def menor (n1,n2,n3):
+    if n1 < n2:
+        if n1 < n3:
+            print(f'Menor número: {n1}')
+            
+    if n2 < n1:
+        if n2 < n3:
+            print(f'Menor número: {n2}')
+            
+    if n3 < n1:
+        if n3 < n2:
+            print(f'Menor número: {n3}')
+
+maior(n1,n2,n3)
+menor(n1,n2,n3)
+
+print(maior)
+print(menor)
+
+# OUTRA FORMA
+
+n1 = int(input('Digite um número: '))
+n2 = int(input('Digite um número: '))
+n3 = int(input('Digite um número: '))
+
+maior = n1
+
+if n2 > n1 and n2 > n3:
+    maior = n2
+    
+if n3 > n1 and n3 > n2:
+    maior = n3
+    
+menor = n1
+
+if n2 < n1 and n2 < n3:
+    menor = n2
+    
+if n3 < n1 and n3 < n2:
+    menor = n3
+
+print('Maior número: ',maior)
+print('Menor número: ',menor)
