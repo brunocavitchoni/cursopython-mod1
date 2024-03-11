@@ -1,0 +1,31 @@
+# 35 - Desenvolva um programa que leia o comprimento de três retas e diga ao usuário
+# se elas podem ou não formar um triângulo
+
+# Se a soma de dois lados não for maior que o terceiro lado, não pode formar um triângulo
+
+n1 = int(input('Digite um número: '))
+n2 = int(input('Digite um número: '))
+n3 = int(input('Digite um número: '))
+
+if n1 + n2 < n3
+    print('Os valores informados não formam um triângulo')
+    
+if n1 + n3 < n3:
+    print('Os valores informados não formam um triângulo')
+    
+if n2 + n3 < n1:
+    print('Os valores informados não formam um triângulo')
+    
+else:
+    print('Os valores informados formam um triângulo')
+    
+# OUTRA FORMA
+
+n1 = int(input('Digite um número: '))
+n2 = int(input('Digite um número: '))
+n3 = int(input('Digite um número: '))
+
+if n1 < n2 + n3 and n2 < n1 + n3 and n3 < n1 + n2:
+    print('Os valores informados formam um triângulo')
+else:
+    print('Os valores informados não formam um triângulo')
